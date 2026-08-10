@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="074a4b85-5395-432f-a9de-e44c774bc736" version="1">
+    <Properties>
+        <Name>Helpful Functions</Name>
+        <Description>A mod that contains helpful Lua functions that can be called during a match.</Description>
+        <Teaser>Functions that are helpful</Teaser>
+        <Authors>satoon101</Authors>
+        <CompatibleVersions>2.0</CompatibleVersions>
+    </Properties>
+
+    <InGameActions>
+        <AddUserInterfaces id="HelpfulFunctionsUI">
+            <Properties>
+                <Context>InGame</Context>
+            </Properties>
+            <File>scripts/UI/HelpfulFunctions_UI_Interface.xml</File>
+        </AddUserInterfaces>
+        <AddGameplayScripts id="HelpfulFunctionsScript">
+            <File>scripts/Gameplay/HelpfulFunctions.lua</File>
+        </AddGameplayScripts>
+    </InGameActions>
+
+    <Files>
+        <File>scripts/Gameplay/HelpfulFunctions.lua</File>
+        <File>scripts/UI/HelpfulFunctions_UI_Interface.lua</File>
+        <File>scripts/UI/HelpfulFunctions_UI_Interface.xml</File>
+    </Files>
+</Mod>
