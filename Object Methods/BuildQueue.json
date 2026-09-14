@@ -1,0 +1,111 @@
+{
+  "Gameplay": {
+    "AddProgress": {},
+    "CanProduce": {},
+    "CheckActiveProduction": {},
+    "CreateBuilding": {},
+    "CreateDistrict": {},
+    "CreateIncompleteBuilding": {},
+    "CreateIncompleteDistrict": {},
+    "CurrentlyBuilding": {
+      "Arguments": null,
+      "Returns": "the name of the item in the first slot in the queue"
+    },
+    "FinishProgress": {},
+    "GetAvailableProductionTypes": {},
+    "GetTurnsLeft": "broken, do not use (use UI function with same name)",
+    "HasBeenPlaced": {},
+    "HasBuildingBeenPlaced": {},
+    "HasBuildingProductionProgress": {
+      "Arguments": {
+        "1": "the index of the building type"
+      },
+      "Returns": "true/false depending on if there is any production progress for the building"
+    },
+    "HasDistrictBeenPlaced": {},
+    "HasDistrictProductionProgress": {},
+    "HasProductionProgress": {},
+    "RemoveBuilding": {
+      "Arguments": {
+        "1": "the index of the building type"
+      },
+      "Returns": null,
+      "Notes": [
+        "when used on a wonder, will remove the wonder altogether"
+      ]
+    },
+    "RemoveDistrict": {},
+    "TypeName": {}
+  },
+  "UI": {
+    "CanProduce": {},
+    "GetAt": {
+      "Arguments": {
+        "1": "the index within the queue"
+      },
+      "Returns": {
+        "Location": "table with location data",
+        "Directive": {
+          "0": "Unit",
+          "1": "Building",
+          "2": "District",
+          "3": "Project"
+        },
+        "Modifiers": "needs further investigation",
+        "Type": {
+          "AttibuteName/Value": {
+            "UnitType": "index of the type of unit",
+            "BuildingType": "index of the type of building",
+            "DistrictType": "index of the type of district",
+            "ProjectType": "index of the type of project"
+          },
+          "Notes": [
+            "name of attribute changes depending on the Directive"
+          ]
+        }
+      }
+    },
+    "GetBuildingCost": {},
+    "GetBuildingProgress": {
+      "Arguments": {
+        "1": "the index of the building type"
+      },
+      "Returns": "the amount of production completed (not percent)"
+    },
+    "GetCity": {},
+    "GetConstructionPlot": {},
+    "GetConstructionsAtLocation": {},
+    "GetCurrentProductionTypeHash": {},
+    "GetCurrentProductionTypeModifier": {},
+    "GetDistrictCost": {},
+    "GetDistrictProgress": {
+      "Arguments": {
+        "1": "the index of the district type"
+      },
+      "Returns": "the amount of production completed (not percent)"
+    },
+    "GetNumEntriesOfProductionTypeHash": {},
+    "GetPreviousProductionTypeHash": {},
+    "GetProductionYield": {},
+    "GetProjectCost": {},
+    "GetProjectProgress": {},
+    "GetSize": {
+      "Arguments": null,
+      "Returns": "the current number of items in the queue"
+    },
+    "GetTurnsLeft": {
+      "Arguments": {
+        "1": "the type of type of object (BuildingType, DistrictType, ProjectType, UnitType)"
+      },
+      "Returns": "The number of turns remaining for the item"
+    },
+    "GetUnitArmyCost": {},
+    "GetUnitCorpsCost": {},
+    "GetUnitCost": {},
+    "GetUnitProgress": {},
+    "GetUnitResourceCost": {},
+    "HasBeenPlaced": {},
+    "HasProductionProgress": {},
+    "TypeName": {}
+  }
+}
